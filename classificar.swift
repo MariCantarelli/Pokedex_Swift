@@ -238,10 +238,11 @@ struct Classificar: View {
                     // Dragon
                     VStack {
                         ZStack {
-                            Circle()
-                                .fill(.blue)
+                            Image("Dragon.png")
+                                .resizable()
+                                .scaledToFill()
                                 .frame(width: 70, height: 70)
-                            Image(systemName: "sparkles")
+                                .clipShape(Circle())
                         }
                         Text("Dragon")
                             .fontWeight(.semibold)
@@ -253,10 +254,11 @@ struct Classificar: View {
                     // Ice
                     VStack {
                         ZStack {
-                            Circle()
-                                .fill(.cyan)
+                            Image("Ice.png")
+                                .resizable()
+                                .scaledToFill()
                                 .frame(width: 70, height: 70)
-                            Image(systemName: "snowflake")
+                                .clipShape(Circle())
                         }
                         Text("Ice")
                             .fontWeight(.semibold)
@@ -268,10 +270,11 @@ struct Classificar: View {
                     // Dark
                     VStack {
                         ZStack {
-                            Circle()
-                                .fill(.black)
+                            Image("Dark.jpeg")
+                                .resizable()
+                                .scaledToFill()
                                 .frame(width: 70, height: 70)
-                            Image(systemName: "moon.fill")
+                                .clipShape(Circle())
                         }
                         Text("Dark")
                             .fontWeight(.semibold)
@@ -283,10 +286,11 @@ struct Classificar: View {
                     // Steel
                     VStack {
                         ZStack {
-                            Circle()
-                                .fill(.gray)
+                            Image("Steel.png")
+                                .resizable()
+                                .scaledToFill()
                                 .frame(width: 70, height: 70)
-                            Image(systemName: "shield")
+                                .clipShape(Circle())
                         }
                         Text("Steel")
                             .fontWeight(.semibold)
@@ -298,10 +302,11 @@ struct Classificar: View {
                     // Ground
                     VStack {
                         ZStack {
-                            Circle()
-                                .fill(.brown)
+                            Image("Ground.jpeg")
+                                .resizable()
+                                .scaledToFill()
                                 .frame(width: 70, height: 70)
-                            Image(systemName: "square.grid.2x2.fill")
+                                .clipShape(Circle())
                         }
                         Text("Ground")
                             .fontWeight(.semibold)
