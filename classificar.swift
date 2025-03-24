@@ -22,88 +22,87 @@ struct Classificar: View {
     var c18: Int = 0 // Ground
 
     var body: some View {
-        ScrollView { // ScrollView
+        ScrollView(.vertical, showsIndicators: false) { // ScrollView
             HStack(spacing: 80) { // Remover o espaçamento entre as colunas
                 VStack(alignment: .leading, spacing: 50) { // Primeira coluna
-                    // Grass
-                    VStack {
-                        ZStack {
-                            Image("Grass.jpeg")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 70, height: 70)
-                                .clipShape(Circle())
-                        }
-                        Text("Grass")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 16))
-                        Text("\(c1)9/12")
-                            .font(.system(size: 15))
+            // Grass
+            VStack {
+                ZStack {
+                    Image("Grass.jpeg")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 90, height: 90)
+                        .clipShape(Circle())
+                            }
+                Text("Grass")
+                    .fontWeight(.semibold)
+                        .font(.system(size: 16))
+                Text("\(c1)9/12")
+                    .font(.system(size: 15))
                     }
 
-                    // Water
-                    VStack {
-                        ZStack {
-                            Image("Water.png")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 70, height: 70)
-                                .clipShape(Circle())
-                        }
-                        Text("Water")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 16))
-                        Text("\(c2)5/22")
-                            .font(.system(size: 15))
+                // Water
+       VStack {
+           ZStack {
+               Image("Water.png")
+                   .resizable()
+                   .scaledToFill()
+                   .frame(width: 90, height: 90)
+                   .clipShape(Circle())
                     }
-
+           Text("Water")
+               .fontWeight(.semibold)
+               .font(.system(size: 16))
+           Text("\(c2)5/22")
+               .font(.system(size: 15))
+       }
                     // Fire
-                    VStack {
-                        ZStack {
-                            Image("Fogo.jpeg")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 70, height: 70)
-                                .clipShape(Circle())
+        VStack {
+            ZStack {
+                Image("Fogo.jpeg")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 90, height: 90)
+                    .clipShape(Circle())
                         }
-                        Text("Fire")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 16))
-                        Text("\(c3)7/15")
-                            .font(.system(size: 15))
-                    }
+            Text("Fire")
+                .fontWeight(.semibold)
+                .font(.system(size: 16))
+            Text("\(c3)7/15")
+                .font(.system(size: 15))
+        }
 
-                    // Electric
-                    VStack {
-                        ZStack {
-                            Image("Raio.png")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 70, height: 70)
-                                .clipShape(Circle())
+            // Electric
+            VStack {
+                ZStack {
+                    Image("Raio.png")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 90, height: 90)
+                        .clipShape(Circle())
                         }
-                        Text("Electric")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 16))
-                        Text("\(c4)/7")
-                            .font(.system(size: 15))
-                    }
+                Text("Electric")
+                    .fontWeight(.semibold)
+                    .font(.system(size: 16))
+                Text("\(c4)/7")
+                    .font(.system(size: 15))
+                }
 
-                    // Bug
-                    VStack {
-                        ZStack {
-                            Image("Bug.png")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 70, height: 70)
-                                .clipShape(Circle())
-                        }
-                        Text("Bug")
-                            .fontWeight(.semibold)
-                            .font(.system(size: 16))
-                        Text("\(c5)2/12")
-                            .font(.system(size: 15))
+            // Bug
+            VStack {
+                ZStack {
+                    Image("Bug.png")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 90, height: 90)
+                        .clipShape(Circle())
                     }
+                Text("Bug")
+                    .fontWeight(.semibold)
+                    .font(.system(size: 16))
+                Text("\(c5)2/12")
+                    .font(.system(size: 15))
+                }
 
                     // Fairy
                     VStack {
@@ -111,7 +110,7 @@ struct Classificar: View {
                             Image("Fairy.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Fairy")
@@ -127,7 +126,7 @@ struct Classificar: View {
                             Image("Poison.jpeg")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Poison")
@@ -143,7 +142,7 @@ struct Classificar: View {
                             Image("Normal.jpeg")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Normal")
@@ -161,7 +160,7 @@ struct Classificar: View {
                             Image("Flying.jpeg")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Flying")
@@ -170,14 +169,14 @@ struct Classificar: View {
                         Text("\(c9)8/11")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Fighting
                     VStack {
                         ZStack {
                             Image("Fighting.jpeg")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Fighting")
@@ -186,14 +185,14 @@ struct Classificar: View {
                         Text("\(c10)1/6")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Psychic
                     VStack {
                         ZStack {
                             Image("Psychic.jpeg")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Psychic")
@@ -202,14 +201,14 @@ struct Classificar: View {
                         Text("\(c11)1/10")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Rock
                     VStack {
                         ZStack {
                             Image("Rock.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Rock")
@@ -218,14 +217,14 @@ struct Classificar: View {
                         Text("\(c12)2/6")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Ghost
                     VStack {
                         ZStack {
                             Image("Ghost.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Ghost")
@@ -234,14 +233,14 @@ struct Classificar: View {
                         Text("\(c13)/3")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Dragon
                     VStack {
                         ZStack {
                             Image("Dragon.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Dragon")
@@ -257,7 +256,7 @@ struct Classificar: View {
                             Image("Ice.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Ice")
@@ -266,14 +265,14 @@ struct Classificar: View {
                         Text("\(c15)/4")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Dark
                     VStack {
                         ZStack {
-                            Image("Dark.jpeg")
+                            Image("Dark.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Dark")
@@ -282,14 +281,14 @@ struct Classificar: View {
                         Text("\(c16)12/14")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Steel
                     VStack {
                         ZStack {
                             Image("Steel.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Steel")
@@ -298,14 +297,14 @@ struct Classificar: View {
                         Text("\(c17)/2")
                             .font(.system(size: 15))
                     }
-
+                    
                     // Ground
                     VStack {
                         ZStack {
-                            Image("Ground.jpeg")
+                            Image("Ground.png")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 90, height: 90)
                                 .clipShape(Circle())
                         }
                         Text("Ground")
@@ -320,10 +319,8 @@ struct Classificar: View {
         }
     }
 }
-
 struct Classificar_Previews: PreviewProvider {
     static var previews: some View {
         Classificar()
     }
 }
-
